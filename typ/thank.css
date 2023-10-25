@@ -1,0 +1,134 @@
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.card {
+    width: calc(33% - 50px);
+    box-shadow: 0 10px 34px rgba(210, 210, 210, 0.5);
+    border-radius: 10px;
+    max-height: 200px;
+    position: relative;
+    margin-top: 10px;
+    /* background-color: #5b0303 !important; */
+
+}
+.card3{
+    background-color: #fff !important;
+
+}
+
+.card:not(:last-child):after {
+    position: absolute;
+    content: "";
+    background-image: url("urn:scrapbook:download:error:https://defigladiators.com/land/thank-you/images/line.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 83px;
+    height: 2px;
+    right: -85px;
+    bottom: 50%;
+    background-color: #5b0303;
+
+}
+
+.card .step {
+    color: #fff;
+    opacity: 0.4;
+    
+}
+
+.card:last-child .step {
+    color: #5b0303;
+    opacity: 0.4;
+}
+
+.card:last-child .text {
+    color: #5B6C94;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1280px;
+    }
+
+    .lg\:container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1439px) {
+    .container {
+        max-width: 1100px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .card {
+        width: 100%;
+    }
+
+    .card:after {
+        /*transform: rotate(*/
+        /*    90deg*/
+        /*);*/
+        /*width: 100px !important;*/
+        /*height: 2px;*/
+        /*right: 41% !important;*/
+        /*bottom: -52px !important;*/
+        display: none;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .card {
+        max-height: 260px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1020px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+
+@media (max-width: 766px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .heading {
+        color: #32325C;
+    }
+
+    .card:after {
+        right: 37% !important;
+    }
+
+    .text-4xl-5 {
+        font-size: 40px;
+    }
+}
+
+.blue-line {
+    width: 120px;
+    height: 1px;
+    background: #fff;
+}
+
+.text-blue {
+    color:#6376f1;
+}
+
+.card:not(:last-child) {
+    background:#00062b;
+}
+
+.leading-extra-tight {
+    line-height: 1;
+}
